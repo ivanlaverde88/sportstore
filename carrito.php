@@ -63,9 +63,9 @@ if (isset($_POST['actualizar'])) {
         <a class="navbar-brand" href="#">SPORT<span>STORE</span></a>
         <div class="ms-auto d-flex align-items-center gap-3">
             <a href="catalogo.php" class="btn btn-outline-light">Catálogo</a>
-            <a href="carrito.php" class="btn btn-outline-light">🛒 Carrito</a>
+            <a href="carrito.php" class="btn btn-outline-light"> Carrito</a>
             <?php if (isset($_SESSION['usuario'])): ?>
-                <span class="text-white">👋 <?= htmlspecialchars($_SESSION['nombre']) ?></span>
+                <span class="text-white"> <?= htmlspecialchars($_SESSION['nombre']) ?></span>
                 <a href="logout.php" class="btn btn-danger">Salir</a>
             <?php else: ?>
                 <a href="login.php" class="btn btn-light">Login</a>
@@ -75,7 +75,7 @@ if (isset($_POST['actualizar'])) {
 
     <div class="carrito-container">
         <div class="carrito-header">
-            <h1>🛒 Carrito de Compras</h1>
+            <h1> Carrito de Compras</h1>
             <a href="index.php" class="btn-regreso">
                 <i class="fas fa-arrow-left"></i> Seguir comprando
             </a>
@@ -125,7 +125,7 @@ if (isset($_POST['actualizar'])) {
                                 </td>
                                 <td>$<?php echo number_format($subtotal, 0, ',', '.'); ?></td>
                                 <td>
-                                    <a href="carrito.php?eliminar=<?php echo $id; ?>" class="btn-eliminar">❌ Eliminar</a>
+                                    <a href="carrito.php?eliminar=<?php echo $id; ?>" class="btn-eliminar"> Eliminar</a>
                                 </td>
                             </tr>
 
